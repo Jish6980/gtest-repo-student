@@ -22,3 +22,14 @@ TEST(StringCalculatorTestSuite,GivenZeroIsExpected)
     //Assert
     ASSERT_EQ(actualValue,expectedValue);
 }
+TEST(StringCalculatorTestSuite,GivenOneIsExpected)
+{
+    //Arrange
+    StringCalculator objUnderTest;
+    string input="1";
+    int expectedValue=1;
+    //Act
+   int actualValue=  objUnderTest.Add(input);
+    //Assert
+    ASSERT_EQ(actualValue,expectedValue);
+}
